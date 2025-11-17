@@ -35,3 +35,5 @@ console.log(th);
 
 //Conditional Statement 
 //
+let name = "thanseem";
+console.log(name);
