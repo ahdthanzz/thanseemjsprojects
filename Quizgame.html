@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>Quiz-Game</title>
+</head>
+
+<body>
+    <h2>Quiz-Game</h2>
+    <div id="quiz">
+        <p id="question"></p>
+        <button id="btn0"></button>
+        <button id="btn1"></button>
+        <button id="btn2"></button>
+        <button id="btn3"></button>
+    </div>
+    <p id="score"></p>
+
+    <script>
+        let current = 0; // current question index
+        let score = 0;   // total correct answers
+
+        const quiz = [
+            { q: "Which language runs in browser?", options: ["Java", "C", "Python", "JavaScript"], ans: 3 },
+            { q: "What does CSS stand for?", options: ["Central Style Sheets", "Cascading Style Sheets", "Cascading Simple Sheets", "Colorful Style Sheets"], ans: 1 },
+            { q: "HTML tag for paragraph?", options: ["<p>", "<h1>", "<div>", "<span>"], ans: 0 },
+
+            // Additional questions
+            { q: "JavaScript is a ___ language?", options: ["Programming", "Markup", "Styling", "Database"], ans: 0 },
+            { q: "Which tag is used for headings?", options: ["<head>", "<h1>", "<div>", "<p>"], ans: 1 },
+            { q: "CSS stands for?", options: ["Cascading Style Sheets", "Creative Style Sheets", "Computer Style Sheets", "Color Style Sheets"], ans: 0 },
+
+            // Add more questions in the same format
+            { q: "Which symbol is used for comments in JS?", options: ["//", "/* */", "#", "<!-- -->"], ans: 0 },
+            { q: "Which method is used to get element by ID?", options: ["getElementById()", "getElements()", "querySelectorAll()", "getElement()"], ans: 0 },
+            { q: "Which company developed JavaScript?", options: ["Microsoft", "Netscape", "Google", "Apple"], ans: 1 },
+            // ... continue until you have 30+ questions
+        ];
+
+
+        const questionEl = document.getElementById('question');
+        const buttons = [
+            document.getElementById('btn0'),
+            document.getElementById('btn1'),
+            document.getElementById('btn2'),
+            document.getElementById('btn3')
+        ];
+        const scoreEl = document.getElementById('score');
+
+        function loadQ() {
+            if (current >= quiz.length) {
+                questionEl.textContent = "Quiz Over!";
+                buttons.forEach(b => b.style.display = "none");
+                scoreEl.textContent = "Your Score: " + score + " / " + quiz.length;
+                return;
+            }
+            questionEl.textContent = quiz[current].q;
+            for (let i = 0; i < 4; i++) {
+                buttons[i].textContent = quiz[current].options[i];
+                buttons[i].onclick = () => {
+                    if (i === quiz[current].ans) score++;
+                    current++;
+                    loadQ();
+                }
+            }
+        }
+
+        loadQ(); // Start the quiz
+    </script>
+</body>
+
+</html>

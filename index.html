@@ -1,0 +1,45 @@
+<html>
+<!-- this dom for html lah change panurathu ok -->
+
+<head>
+    <title>
+        Thanseem
+    </title>
+</head>
+
+<body>
+    <h1 id='Head' class="head">
+        Thanseem Ahamed
+    </h1>
+    <div id='box'>
+    </div>
+    <div id='1'>
+    </div>
+</body>
+<script>
+    // ingu id kodukanum
+     let element = document.getElementById('box');//specific element view
+      element.textContent += 'Your Name ';
+      element.innerHTML = '<p> Hi hello How Are You </p>'
+      element.className = 'Class';
+      element.style.color = 'Blue';
+  
+    //   let element1 = document.getElementById('1');
+    //   element1.innerHTML = '<h2> This for sample </h2>';
+    //   element1.style.color = 'red';
+    //   console.log(element); */
+    // // let element = document.getElementsByTagName('h1');all datavah kodukum
+    // // let element1 = document.getElementsByClassName('head');
+    // let element1 = document.querySelector('h1');//ona mattum than out put varum
+    // // console.log(element[0]);
+    // console.log(element1);
+// Create for html 
+let para = document.createElement('p');
+para.textContent = 'vjnfjnq';
+console.log(para);
+element.append(para); //para tag ah mearge panura idam
+element.prepend(para);//para tag starting lah add avidum
+</script>
+<!-- title vivew for dom document.title -->
+
+</html>
