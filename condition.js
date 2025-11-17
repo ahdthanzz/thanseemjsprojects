@@ -69,3 +69,10 @@ if(age >=18 && Gender=='F'){
 
 }
  */
+let no =10;
+if(no%2==0){
+    console.log("this Evan Number");
+}
+else{
+    console.log("Odd Number");
+}
