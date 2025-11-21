@@ -57,7 +57,7 @@ let sub = (a, b) => a - b;
 
 console.log(operation(add,3,2)); */
 
-function cal(op, a, b,) {
+/* function cal(op, a, b,) {
     return op(a, b);
 
 }
@@ -65,3 +65,19 @@ function cal(op, a, b,) {
 let add = (a, b) => a = b;
 let sub = (a, b) => a - b;
 console.log(cal(sub, 4, 5));
+
+let multi = (a) => a*5 ;
+console.log(multi(6)); */
+function ope(ab, a, b) {
+    return ab(a, b)
+
+}
+let add = (a, b) => (a + b);
+function sub(a, b) {
+    return (a - b);
+
+}
+console.log(sub(4,3));
+console.log(sub(5,3));
+// console.log(ab(7,5));
+console.log(add(7,5));
