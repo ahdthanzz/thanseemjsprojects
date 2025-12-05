@@ -40,7 +40,7 @@ console.log(adding.add(5)); */
 //     this.name = 'thanseem';
 //     this.age =25,
 //     this.city = "Kalmunai"
-    
+
 // }
 // let th = new example();
 // console.log(th.city);
@@ -62,7 +62,7 @@ console.log(adding.add(5)); */
 // console.log(hello);
 // console.log(hello.color());
 
-function Number() {
+/* function Number() {
     this.num1 =12;
     this.num2 =24;
     this.add = function(num3){
@@ -71,4 +71,29 @@ function Number() {
 
 }
 let adding = new Number();
-console.log(adding.add(40))
+console.log(adding.add(40)) */
+
+/* 
+function User() {
+    this.name = 'thanseem';
+    this.age =function(){
+        return 23
+    }
+    
+}
+
+//crate object
+ let th = new User ();
+ console.log(th);
+ console.log(th.age()); */
+
+//question
+function Add() {
+    this.num1 = 5;
+    this.num2 = 6;
+    this.sum = function (num3) {
+        return this.num1 + this.num2 + num3;
+    }
+}
+let rt = new Add();
+console.log(rt.sum(4)); 

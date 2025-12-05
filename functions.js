@@ -1,77 +1,83 @@
-// Functions For JavaScript
-/* let a = 12, b = 13;
-function operation(a,b) {
-    console.log(a+b*a);
+/* let a = 12;
+let b = 24;
+            //this is parameters//
+function add(a, b=12) {
+    console.log(a+b);
+    console.log(a*b-a);
+
 }
-
-operation(a,b);
-operation(1,4) */;
-//default values yum set pannalam 
-
-
-//Scop Variable
-/* let a = 14, b = 15;
-let c;//Golabal variable
-function ope() {
-    c = (a * b);//Loacal Variable
-    return c;
-}
-
-console.log('output', typeof ope(2, 3));
+//call the function
+add(a,b);
  */
-/*let num1 = 122;
 
- function oddEvan(num1) {
-    if (num1 % 2 == 0) {
-        return "Even";
-    }
-    else {
-        return "Odd";
-    }
+//Scope variable
+/* let a = 12;
+let b = 24;
+
+//let c; //global variable
+
+function add(a, b) {
+    c = (a + b); 
+    return c ; 
+    //local variable
 
 }
-console.log(oddEvan(num1)); */
+//call the function
+add(a, b);
+console.log("this is a local variable ::::: ",c);
+ */
 
-// //Arrow Function
-// let oddEvan = (a) => a % 2 == 0 ? "Even" : "Odd";
-// console.log(oddEvan(122));
+/* let no1;
+function oddEvan(no1) {
+    if (no1%2==0) {
+        return "Evan";
 
-
-/* function operation(op, a, b) {
-    return op(a, b);
+    }
+    else{
+        return "Odd"
+    }
+    
 }
+// console.log(oddEvan(10));
+let oddOrEvan = oddEvan;
+console.log(oddOrEvan(4)); */
+
+/* let a = 12;
+let oddOrEvan =(a)=> a%2==0 ? "Evan" : "Odd" ;
+console.log(oddOrEvan(10)); */
+/* 
+function operation(op, a, b) {
+    return op(a,b);
+
+}
+
+// this is function
 let add = (a, b) => a + b;
-function sub(a, b) {
-    return a - b;
+let sub = (a, b) => a - b;
+
+console.log(operation(add,3,2)); */
+
+/* function cal(op, a, b,) {
+    return op(a, b);
+
 }
-console.log(operation(sub,2,6)); */
 
-// let x5 = (a) => a*5;
-// console.log(x5(4));
-// let a = 12, b = 45;
-// function add(a, b) {
-//     console.log(a - b);
-// }
-// add(a, b);
+let add = (a, b) => a = b;
+let sub = (a, b) => a - b;
+console.log(cal(sub, 4, 5));
 
-// let num1 = 19;
-// function oddEvan(num1) {
-//     if (num1 % 2 == 0) {
-//         return 'Evan';
-//     }
-//     console.log("hello tahnseem");
-//     return 'Odd';
-// }
+let multi = (a) => a*5 ;
+console.log(multi(6)); */
+function ope(ab, a, b) {
+    return ab(a, b)
 
-// let oddEvan = oddOrEvan;
-// //console.log(oddEvan(num1));
-// console.log(oddOrEvan(num1));
+}
+let add = (a, b) => (a + b);
+function sub(a, b) {
+    return (a - b);
 
-// callback function
-
-// let oddEvan =(num1) => num1 %2==0? 'Evan' : 'Odd';
-// console.log(oddEvan(4));
-
-
-let xa = (a) => a*5;
-console.log(xa(4));
+}
+console.log(sub(4,3));
+console.log(sub(5,3));
+// console.log(ab(7,5));
+console.log(add(7,5));

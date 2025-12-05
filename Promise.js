@@ -1,4 +1,4 @@
-let itemAvilable = true;
+/* let itemAvilable = true;
 
 function waitScorel() {
     return new Promise((yes, no) => {
@@ -33,4 +33,62 @@ async function buyItems() {
 
 }
 buyItems();
-// console.log('Hello thanseem');
+// console.log('Hello thanseem'); */
+
+itintreview = false;
+function intreview() {
+    return new Promise((selact, notselected) => {
+        if (itintreview) {
+            selact("Is Selected for interview");
+
+        }
+        else {
+            notselected("Not Selected");
+
+        }
+
+    })
+}
+
+
+async function attembted() {
+    /*  intreview().then((message)=>{
+         console.log(message);
+     })
+     .catch((error)=>{
+         console.log(error);
+     })
+     .finally(()=>{
+         console.log("Go Home");
+     }) */
+    try {
+        let result = await intreview();
+        console.log(result);
+
+    }
+    catch (error) {
+        console.log('intreview Over');
+
+    }
+
+
+
+}
+
+attembted();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

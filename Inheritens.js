@@ -1,4 +1,4 @@
-//class
+/* //class
 class Car {
     name;
     milage;
@@ -38,4 +38,43 @@ let vehicle = new Vehicle("BMW", 12545, 'Black', "2021");
 vehicle.display();
 console.log(vehicle);
 
-//over riding
+//over riding */
+
+class Animal {
+    legs;
+    tail;
+    constructor(legs, tail) {
+
+        this.legs = legs;
+        this.tail = tail;
+    }
+    display() {
+        console.log("animal display");
+        console.log(this.legs);
+        console.log(this.tail);
+    }
+
+}
+// inga animal vanthu perant class Human vanthu child class ok
+class Human extends Animal {
+    nataionality;
+    constructor(legs, tail, nataionality) {
+        super(legs, tail);//parent ah inga call pannaum ok
+        this.nataionality = nataionality;
+        
+    }
+    display() {
+        console.log("Human Display");
+        console.log(this.legs);
+        console.log(this.tail);
+        console.log(this.nataionality);
+
+    }
+
+}
+/* let anime = new Animal(2,true,"srilankan");
+anime.display(); */
+let th = new Human(4, false, "srilankan", 5);
+th.display();
+
+//over raiding parent 

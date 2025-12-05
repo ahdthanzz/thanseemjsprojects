@@ -76,6 +76,89 @@ console.log(thansim.age);
 
 // console.log(MathHelper.add(10, 20)); // 30
 
-class sum{
+/* class sum{
     
+} */
+
+
+/* let car ={
+    name : 'alto',
+    price : 250000,
+    color : 'Red',
+    display : function(){
+
+    }
+}; */
+//class create
+/* class Car {
+    name;
+    age;
+
+
+    constructor(name, age) {
+        this.age = age;
+        this.name = name;
+
+    }
+    display() {
+        console.log('Name :', this.name);
+        console.log('Age :', this.age)
+    }
+
 }
+let th = new Car('thnaseem', 24);
+console.log(th.name)
+th.display(); */
+
+// special function for class
+class user {
+    #name; //private proprtiy
+    #age;
+    #color;
+
+    constructor(name, age) {
+        this.#age = age;
+        this.#name = name;
+
+    }
+    display() {
+        console.log('Name :', this.#name);
+        console.log('Age :', this.#age)
+    }
+    get name() {
+        return "Name =>" + this.#name;
+    }
+    get age() {
+        return 'this your age' + this.#age;
+    }
+    //value set panurathu
+    set name(name) {
+        if (name == 'thanseem') {
+            this.#name = 'ahamed';
+
+
+        } else {
+            this.#name = name;
+
+        }
+
+
+    }
+    set age(age) {
+        if (age == 24) {
+            this.#age = 23;
+        }
+        else {
+            this.#age = age;
+        }
+
+
+    }
+
+}
+
+let rt = new user("thanseem", 24);
+rt.name = 'thanseem';
+rt.age =24 ;
+console.log(rt.name);
+console.log(rt.age);
