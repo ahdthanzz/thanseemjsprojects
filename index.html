@@ -1,45 +1,72 @@
-<html>
-<!-- this dom for html lah change panurathu ok -->
+<!DOCTYPE html>
 
 <head>
     <title>
-        Thanseem
+        thanseem
     </title>
 </head>
 
 <body>
-    <h1 id='Head' class="head">
-        Thanseem Ahamed
-    </h1>
+    <h1 id='head' class='hello'> wellcome to </h1>
     <div id='box'>
-    </div>
-    <div id='1'>
+        <h2 id = 'paraid'>hello123</h2>
+
     </div>
 </body>
 <script>
-    // ingu id kodukanum
-     let element = document.getElementById('box');//specific element view
-      element.textContent += 'Your Name ';
-      element.innerHTML = '<p> Hi hello How Are You </p>'
-      element.className = 'Class';
-      element.style.color = 'Blue';
+    /* console.log(document);//full doument view
+    console.log(document.body);
+    console.log(document.title);
+    console.log(document.h1); */
+
+    //javascript selecter id
+    /* let element = document.getElementById('head');
+    console.log(element); 
+    element.textContent += 'Karikalan Majic Show !!'
+    console.log(element); */
+    // ippo ingu irukura div tag ku oru text edd pana poram ok
+    /*  let element  = document.getElementById("box");
+     element.textContent += 'Karikalan Majic Show !!';
+     console.log(element); */
+
+    //inoru tag ah vanthu set panna poram
+
+    /* /*  let element = document.getElementById('box');
+     element.innerHTML = '<p> this for masjic show </p>'
+     //class create for tag
+     element.className = 'bodyClass';
+     //style lum add panna iyalum
+     element.style.color='blue';
+     element.style.fontSize ='25px'; */
+    //console.log(element); 
+
+    /*  let element = document.getElementsByTagName('h1');
+     console.log(element[0]); */
+    /*   let element = document.getElementsByClassName('hello');
+      console.log(element[0]); */
+
+    //tag lah irukmu first ellament ah kattum
+    /* let element = document.querySelector('h1');
+    console.log(element); */
+
+    //dynamically craet html
+    //let para = document.createElement('p');
+    let para = document.getElementById('paraid');
+    /*   para.textContent = 'hi';
+      if (para.textContent.length < 100) {
+          para.textContent += 'HELLO THANSEEM';
   
-    //   let element1 = document.getElementById('1');
-    //   element1.innerHTML = '<h2> This for sample </h2>';
-    //   element1.style.color = 'red';
-    //   console.log(element); */
-    // // let element = document.getElementsByTagName('h1');all datavah kodukum
-    // // let element1 = document.getElementsByClassName('head');
-    // let element1 = document.querySelector('h1');//ona mattum than out put varum
-    // // console.log(element[0]);
-    // console.log(element1);
-// Create for html 
-let para = document.createElement('p');
-para.textContent = 'vjnfjnq';
-console.log(para);
-element.append(para); //para tag ah mearge panura idam
-element.prepend(para);//para tag starting lah add avidum
+      }
+  
+      console.log(para);
+      document.body.appendChild(para); */
+    para.textContent += "Hello wordl";
+    para.id = 'paraid';
+
+    console.log(para);
+
 </script>
-<!-- title vivew for dom document.title -->
+
 
 </html>
+<!-- // dom = is html element ah edukurathukum and edit panurathukum use panurathu -->

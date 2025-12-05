@@ -7,58 +7,45 @@
 </head>
 
 <body>
-    <button id='sj'>I</button>
+    <button id='sj'>1</button>
     <button id='btn'> adding</button>
     <!-- Mouse event -->
 </body>
 <!-- Click Aana change avura event -->
 <script>
     // Mouse events
-    let btn = document.getElementById('sj');
-    // btn.addEventListener('click', (event) => {
-    //     btn.textContent = "Aana Illa";
-    //     console.log('Clicked');
-
-    // });
-    // let add = document.getElementById('btn');
-    // add.addEventListener('click', () => {
-    //     add.textContent = 'Totel';
-    //     console.log('Add Avittu');
-
-    // });
-    // // hour aana marura event
-    // btn.addEventListener('mouseover', () => {
-    //     btn.textContent = "oruvela irukumao";
-    //     console.log('hover');
-    // });
-    // // hover lah irunthu veliaya vantha intha event 
-    // btn.addEventListener('mouseout', () => {
-    //     btn.textContent = "Iruku";
-    //     console.log('mouseout');
-    // });
-
-    // Key Board Events
-
-    // let btn = document.getElementById('sj');
-    // document.addEventListener('keydown', (event) => {
-    //     console.log(event.key);
-    //     switch (event.key) {
-    //         case 'ArrowUp':
-    //             btn.textContent = Number(btn.textContent) + 1;
-    //             break;
-    //         case 'ArrowDown': 
-    //             btn.textContent = Number(btn.textContent)-1;
-    //             break;
-
-
-    //     }
-
-
-    // })
-    document.addEventListener('click', (event) => {
-        document.body.style.backgroundColor = "blue";
-        console.log('Clicked');
+    //this click event 
+     let btn = document.getElementById('sj');
+    btn.addEventListener('click' , (event)=>{
+        btn.style.background ='red';
+        console.log("clicked");
     });
+    //mouse over list
+    btn.addEventListener('mouseover',(event)=>{
+        btn.style.color= "blue";
+        console.log('mouseover');
+    });
+    //mouse out list
+    btn.addEventListener('mouseout',(event)=>{
+        btn.textContent ="this mouse out event";
+        console.log("mouseout");
+    }); 
+
+    //key board events
+   /*  let btn = document.getElementById('sj');
+    document.addEventListener('keydown', (event) => {
+        //btn.textContent = 'this key board event';
+        console.log(event.key);
+        if (event.key == 'ArrowUp') {
+            btn.textContent = Number(btn.textContent) + 1;
+        }
+        else if (event.key == 'ArrowDown') {
+            btn.textContent = Number(btn.textContent) - 1;
+
+        }
+ */
+
+
 
 </script>
 

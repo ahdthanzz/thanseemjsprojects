@@ -55,7 +55,7 @@ for (s of set) {
 } */
 
 //question
-let set = new Set();
+/* let set = new Set();
 set.add(0)
     .add(7)
     .add(6)
@@ -66,4 +66,63 @@ set.add(0)
     .add(1)
     .add(3)
     .add(8)
+console.log(set.size);
+
+ */
+
+
+/* let map = new Map();
+map.set(1, 'Thanseem')
+map.set(2, 'ahd')
+    .set(3, 'rt');
+console.log(map);
+
+//Read data for using Get method
+console.log(map.get(2));
+//check the data iruka illa yah ntu pakurathuku
+console.log(map.has(2));
+map.delete(1);
+console.log(map);
+//total clear panurathuku
+// map.clear();
+console.log(map);
+
+//map size
+console.log(map.size);
+
+console.log(map);
+//keys ah print pani pakurathuku
+for (key of map.keys()){
+    console.log(key);
+};
+
+//only print values
+for (key of map.values()){
+    console.log(key)
+}
+
+//totel ah print pani pakurathuku
+for (key of map){
+    console.log(key);
+} */
+
+//set
+
+/* let set= new Set();
+
+set.add('thanseem');
+set.add('thanseem');
+console.log(set); */
+
+let set = new Set();
+set.add(0);
+set.add(7);
+set.add(6);
+set.add(1);
+set.add(0);
+set.add(1);
+set.add(7);
+set.add(1);
+set.add(3);
+set.add(8);
 console.log(set.size);

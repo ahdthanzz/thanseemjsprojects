@@ -182,10 +182,34 @@ for (key in user) {
     // console.log(key);
     console.log(key + '----' + user[key]);
 }
-let a = 10;
+/* let a = 10;
 let b = a;
 console.log(a, b);
 
 b = 20;
 
-console.log(a, b);
+console.log(a, b); */
+
+//totel ah change panna iayalathu
+//value properties ah change panna iyalum
+const at = {
+    name: 'th',
+    age: 12,
+}
+
+at.name = "thanseem";
+console.log(at);
+//carbage collections
+
+
+//question
+let c = {
+    name: "ahd",
+    age: 23,
+}
+
+b = c;
+console.log(c);
+c = {}
+console.log(b);
+console.log(c);

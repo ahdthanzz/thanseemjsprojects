@@ -37,8 +37,70 @@ let mat = [
 //console.log(mat);
 // console.log(mat[1][2]);
 // console.log(mat[1][0][1]);
-for (let i = 0; i < mat.length; i++) {
+/* for (let i = 0; i < mat.length; i++) {
     for (let j = 0; j < mat[i].length; j++){
         console.log(mat[i][j]);
     }
-}
+} */
+
+let bike = ['Fz', 'pulsar', 'Twister', { name: 'thanseem' }, function add(a, b) { return a + b }
+];
+/* console.log(bike);
+//data insert
+bike.push('Hero Honda');
+console.log(bike);
+bike.pop();
+console.log(bike);
+console.log(bike[3].name);
+console.log(bike[4](4, 2));
+/* for (bikes of bike) {
+    console.log(bikes)
+} */
+
+//Array Functions
+//data insert index type
+// bike[1] = "Dio";
+// console.log(bike);
+// bike.unshift('hero');
+// console.log(bike);
+
+// //last remove
+// console.log(bike.pop());
+// console.log(bike);
+// //remove first
+
+// console.log(bike.shift());
+// console.log(bike);
+
+// //total use in array Of function
+// //of than use pannaum array ku
+// for (biker of bike) {
+//     console.log(biker);
+// }
+
+// /* for (biker in bike){
+//     console.log(bike[biker]);
+// } */
+
+// //for loop use panna iyalum
+// for (i = 0; i < 3; i++) {
+//     console.log(bike[i]);
+// }
+// //array lenth idintify
+// console.log(bike.length);
+
+// let metrix = [
+//     [1, 2, 3],
+//     [7, 8, 9],
+//     [4, 5, 9]
+// ];
+// // console.log(metrix[0][0]);
+
+// for (let j = 0; j < metrix.length; j++) {
+//     for (k = 0; k < metrix[j].length; k++) {
+//         console.log(metrix[j][k])
+
+//     }
+
+// }
+console.log(bike.length-1);
